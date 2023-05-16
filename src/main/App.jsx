@@ -5,13 +5,16 @@ import Logo from "../components/template/Logo";
 import Nav from "../components/template/Nav";
 import Home from "../home/Home";
 import Footer from "../components/template/Footer";
+import { Router } from "react-router";
 
 const App = (props) => {
   return (
     <div className="app">
       <Logo />
-      <Nav />
-      <Home />
+      <Router>
+        <Nav />
+        <Home />
+      </Router>
       <Footer />
     </div>
   );
