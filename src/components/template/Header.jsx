@@ -1,8 +1,8 @@
 import "./Header.css"
 
-const Header = () => {
+const Header = (props) => {
     return (
-        <header className="header">
+        <header className="header d-none d-sm-flex">
             Cabeçalho
         </header>
     )

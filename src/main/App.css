@@ -1,8 +1,8 @@
 :root {
   --bg-dark: #1a2f3a;
 
-  --logo-height: 100px;
-  --header-height: 100px;
+  --logo-height: 200px;
+  --header-height: 200px;
   --aside-width: 225px;
   --footer-height: 40px;
 
@@ -30,5 +30,24 @@
 
     height: 100vh;
     background-color:#F5F5F5;
-    
+}
+
+aside.logo {
+    grid-area: logo;
+}
+
+header.header {
+    grid-area: header;
+}
+
+aside.menu-area {
+    grid-area: menu;
+}
+
+main.content {
+    grid-area: content;
+}
+
+footer.footer {
+    grid-area: footer;
 }

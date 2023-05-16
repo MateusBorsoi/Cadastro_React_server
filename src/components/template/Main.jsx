@@ -2,10 +2,13 @@ import "./Main.css";
 import React from "react";
 import Header from "./Header";
 
-const Main = () => {
+const Main = (props) => {
+
+    const {icon, title, subtitle} = props
+
   return (
     <React.Fragment>
-      <Header />
+      <Header {...props} />
       <main className="content">Conteúdo</main>
     </React.Fragment>
   );

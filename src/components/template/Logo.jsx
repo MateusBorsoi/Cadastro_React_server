@@ -1,8 +1,13 @@
 import './Logo.css'
+import logo from '../../assets/img/logo.png'
 
-const Logo = () => {
+const Logo = (props) => {
     return (
-        <aside className='logo'>Logo</aside>
+        <aside className='logo'>
+            <a href='/' className='logo'>
+                <img src={logo} alt='logo'/>
+            </a>
+        </aside>
     )
 }
 
