@@ -4,12 +4,14 @@ import Header from "./Header";
 
 const Main = (props) => {
 
-    const {icon, title, subtitle} = props
-
   return (
     <React.Fragment>
       <Header {...props} />
-      <main className="content">Conteúdo</main>
+      <main className="content container-fluid">
+        <div className="p-3 m-3">
+            {props.children}
+        </div>
+      </main>
     </React.Fragment>
   );
 };
