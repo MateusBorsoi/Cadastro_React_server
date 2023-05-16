@@ -6,16 +6,17 @@ import Nav from "../components/template/Nav";
 import Home from "../home/Home";
 import Footer from "../components/template/Footer";
 import { Router } from "react-router";
+import { BrowserRouter } from "react-router-dom";
 
 const App = (props) => {
   return (
     <div className="app">
-      <Logo />
-      <Router>
+      <BrowserRouter>
+        <Logo />
         <Nav />
         <Home />
-      </Router>
-      <Footer />
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 };
