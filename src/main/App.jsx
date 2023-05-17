@@ -3,20 +3,20 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 import Logo from "../components/template/Logo";
 import Nav from "../components/template/Nav";
-import Home from "../home/Home";
 import Footer from "../components/template/Footer";
-import { Router } from "react-router";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
+import Routing from "../Routes";
 
-const App = (props) => {
+const App = () => {
   return (
     <div className="app">
-      <BrowserRouter>
+      <Router>
+        <Routing />
         <Logo />
         <Nav />
-        <Home />
+        <Routing />
         <Footer />
-      </BrowserRouter>
+      </Router>
     </div>
   );
 };
