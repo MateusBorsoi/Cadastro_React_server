@@ -6,9 +6,9 @@
       "email": "borsoimateus@gmail.com"
     },
     {
-      "id": 2,
-      "name": "Teste",
-      "email": "Teste@gmail.com"
+      "name": "teste",
+      "email": "teste@teste.com.br",
+      "id": 2
     }
   ]
 }
